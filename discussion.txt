@@ -1,22 +1,16 @@
 Recursion:
 1. Recursion is a process that occurs when a function repetitively calls itself
-   with a different input value than the previous call resulting in nested
-   functions where the outer level waits for its inner level to finish which, in
-   turn, may be waiting on its own inner level.
+   with a different input value than the previous call resulting in nested functions where the outer level waits for its inner level to finish which, in turn, may be waiting on its own inner level.
 2. The base case is what allows a recursive function to actually finish. If we 
-   leave off the base case, the function will call itself forever or until your
-   computer decides to break it. 
+   leave off the base case, the function will call itself forever or until your computer decides to break it. 
 
 Graphs
 1. Graphs are a set of nodes that are connected by edges. Graphs can contain loops, 
-   do not have a root node, may contain unconnected nodes, and, in directed graphs,
-   many nodes can be a "parent" of the same node.
+   do not have a root node, may contain unconnected nodes, and, in directed graphs, many nodes can be a "parent" of the same node.
 2. A graph is a special type of tree that can have loops or cycles and may have 
-   unconnected nodes. Graphs can also be directed or undirected, where trees are
-   always directed.
+   unconnected nodes. Graphs can also be directed or undirected, where trees are always directed.
 3. A food chain would be good to model with a directed graph since a single node,
-   "birds", may have many nodes that eat it but may also eat many nodes. This 
-   beahvior would not work with a tree.
+   "birds", may have many nodes that eat it but may also eat many nodes. This beahvior would not work with a tree.
 
 Data Structure Performance
 
@@ -35,18 +29,11 @@ Set (Hash Map)                  O(1)      O(1)       O(1)     O(n)       medium
 Binary Search Tree              O(1)   O(n log n) O(n log n)  O(1)        low   
 Tree                            O(n)      O(1)       O(1)     O(1)        low
 
-I've asummed here that when you say "Iterate: Find next item in data structure"
-that we are at a given item and we want to find it's parents or children, depending
-on the definition of next. If instead, you're looking for runtime for searching 
-for a specific value: BST -> O(log n), Tree -> O(n)
+I've asummed here that when you say "Iterate: Find next item in data structure" that we are at a given item and we want to find it's parents or children, dependingon the definition of next. If instead, you're looking for runtime for searching for a specific value: BST -> O(log n), Tree -> O(n)
 
 Sorting:
 1. The bubble sort algorithm begins by comparing the first two items in the list.
-   If the first is larger than the second, the elements swap places. The the 2nd
-   and 3rd items of the list are compared and swapped if needed. This continues 
-   through the length of the list which "bubbles" the largest number to its 
-   correct position at the end fo the list. This process is then repeated to 
-   "bubble" up the second highest and so on until the list is sorted.
+   If the first is larger than the second, the elements swap places. The the 2nd and 3rd items of the list are compared and swapped if needed. This continues through the length of the list which "bubbles" the largest number to its correct position at the end fo the list. This process is then repeated to "bubble" up the second highest and so on until the list is sorted.
 2. The merge sort algorithm is a recursive algorithm in which a list is successively
    cut in half until we have a guarenteed sorted list (a one item list). Once we have our single item lists, we compare the first item of our left list to the first item of our right. The smaller of the two goes first into a new list, followed by the second. Then we have pairs of sorted two item lists where we repeat the process of comparing the first item and creating a new sorted list from those two lists. This repeats until the complete list is merged back together sorted.
 3. The quick sort algorithm uses a pivot value that is generally chosen at random
